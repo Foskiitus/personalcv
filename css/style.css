@@ -1,0 +1,71 @@
+.left {
+    background-color: black;
+}
+.right {
+    background-color: aqua;
+}
+
+body .container {
+    background-color: #eeeeee;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+
+.started {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    top: -80px;
+
+    padding: 6px 0;
+    position: relative;
+}
+.cv-info {
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    
+}
+.cv-info .cv-image{
+    margin: 0 auto 15px auto;
+    width: 148px;
+    height: 148px;
+    overflow: hidden;
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 148px;
+    -moz-border-radius: 148px;
+    -webkit-border-radius: 148px;
+    -khtml-border-radius: 148px;
+    
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    -khtml-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.cv-info .cv-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -khtml-border-radius: 100%;
+    
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.cv-info .cv-name {
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 44px;
+    color:#363636;
+    font-family: 'Roboto', Helvetica;
+}
+.cv-info .cv-desc {
+    margin: 15px 0 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #363636;
+    font-family: 'Roboto', helvetica;
+}
