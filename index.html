@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
   <meta charset="utf-8">
@@ -8,18 +8,18 @@
   <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Google+Sans">
   <title>Ricardo Lopes</title>
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <script src="https://kit.fontawesome.com/2ed31120b5.js"></script>
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/materialize.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="view jarallax" style="height: 50vh;">
-    <img class="jarallax-img" src="img/img2.jpg" alt="">
+  <div class="parallax-container">
+    <div class="parallax"><img src="img/img2.jpg"></div>
   </div>
     
   <!-- Start your project here-->
@@ -31,6 +31,13 @@
         </div>
         <div class="cv-name">Ricardo Lopes</div>
         <div class="cv-desc">A little description</div>
+        <div class="cv-social">
+          <a href="#"><span class="circle"><i class="icon fab fa-facebook-f"></i></span></a>
+          <a href="#"><span class="circle"><i class="icon fab fa-twitter"></i></span></a>
+          <a href="#"><span class="circle"><i class="icon fab fa-instagram"></i></span></a>
+          <a href="#"><span class="circle"><i class="icon fab fa-skype"></i></span></a>
+          <a href="#"><span class="circle"><i class="icon fab fa-github"></i></span></a>
+        </div>
       </div>
     </div>
   </div>
@@ -39,22 +46,19 @@
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
-      // object-fit polyfill run
-      objectFitImages();
-  
-      /* init Jarallax */
-      jarallax(document.querySelectorAll('.jarallax'));
-  
-      jarallax(document.querySelectorAll('.jarallax-keep-img'), {
-          keepImg: true,
-      });
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
     </script>
 </body>
 
