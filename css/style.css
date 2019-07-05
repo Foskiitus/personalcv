@@ -13,7 +13,17 @@ strong {
     color: #363636;
 }
 
-
+.btn {
+    background-color: #304fff;
+    padding: 0;
+}
+.btn:hover {
+    background-color: dodgerblue;
+}
+.btn i {
+    line-height: 40px;
+    margin-left: -2px;
+}
 
 
 /* Precise marks */
@@ -125,6 +135,7 @@ body .container {
 .cv-info .cv-social a .circle .icon {
     font-size: 21px;
     color: white;
+    padding-left: 3px;
 }
 .card {
     border-radius: 4px;
@@ -145,6 +156,11 @@ body .container {
     color: #363636;
     font-weight: 400;
 }
+
+.list-info ul li:last-child {
+    border-bottom: none;
+}
+
 .list-info ul li strong {
     padding: 0 20px 0 0;
     position: absolute;
@@ -163,4 +179,35 @@ body .container {
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     -khtml-border-radius: 2px;
+}
+
+.card-content p {
+    text-align: justify;
+}
+
+.title h1 {
+    text-align: center;
+    font-weight: 100;
+    color:#363636;
+    font-family: 'Roboto', Helvetica;
+}
+
+.topo .circle {
+    background-color: #304fff;
+    color: white;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -khtml-border-radius: 100%;
+    margin-top: -40px;
+    position: absolute;
+    margin-left: 35%; 
+}
+.topo .circle .icon {
+    font-size: 50px;
+    color: white;
+    padding: 15px;
 }
