@@ -24,7 +24,9 @@ strong {
     line-height: 40px;
     margin-left: -2px;
 }
-
+.row {
+    margin-bottom: 25px;
+}
 
 /* Precise marks */
 body .parallax-container .parallax img{
@@ -191,6 +193,16 @@ body .container {
     color:#363636;
     font-family: 'Roboto', Helvetica;
 }
+.topo {
+    padding-top: 15px;
+}
+
+.topo p {
+    text-align: center;
+    font-family: 'Roboto', Helvetica;
+    font-weight: 400;
+
+}
 
 .topo .circle {
     background-color: #304fff;
@@ -202,12 +214,46 @@ body .container {
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%;
     -khtml-border-radius: 100%;
-    margin-top: -40px;
-    position: absolute;
-    margin-left: 35%; 
+    margin: 0 auto;
+    position: relative; 
 }
 .topo .circle .icon {
     font-size: 50px;
     color: white;
     padding: 15px;
+}
+.topo .circle p {
+    margin: 20px 0;
+    display: block;
+    font-weight: 400;
+    font-size: 17px;
+    color: #363636;
+    text-align: center;
+}
+
+.card-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.card-content ul li {
+    padding: 12px 0 14px 0;
+    font-weight: 400;
+}
+
+.card-content ul li .title {
+    margin: 0 0 6px 0;
+    position: relative;
+    display: block;
+    font-size: 14px;
+    color: #363636;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .row .ext-mar {
+        margin-top: 45px;
+    }
 }
